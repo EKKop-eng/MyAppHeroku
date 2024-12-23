@@ -1,0 +1,15 @@
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<h2>Edit Product</h2>
+
+<form method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="@Model.Name" />
+    <label for="price">Price</label>
+    <input type="number" id="price" name="price" value="@Model.Price" />
+    <button type="submit">Update</button>
+</form>
